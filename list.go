@@ -15,3 +15,7 @@ func (l *List[X]) Pop() X {
 func (l List[X]) Len() int {
 	return len(l)
 }
+
+func NewList[X any](size int) List[X] {
+	return make([]X, size)
+}
